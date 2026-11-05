@@ -115,7 +115,7 @@ textarea.txt { min-height:90px; resize:vertical; }
 .arrow { position:absolute; top:50%; transform:translateY(-50%); width:28px; height:28px; border-radius:50%; border:0; background:rgba(255,255,255,.9); color:#111; cursor:pointer; display:none; align-items:center; justify-content:center; opacity:0; transition:opacity .2s; z-index:3; }
 .arrow.prev { left:8px; } .arrow.next { right:8px; }
 .arrow.hide { display:none !important; }
-@media (hover:hover) { .media:hover .arrow { display:flex; opacity:1; } }
+@media (hover:hover) { .media:hover .arrow { display:none; opacity:1; } }
 .mute { position:absolute; right:12px; bottom:12px; width:28px; height:28px; border-radius:50%; border:0; background:rgba(26,26,26,.8); color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:3; }
 .burst { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; opacity:0; z-index:4; }
 .burst svg { width:96px; height:96px; fill:#fff; stroke:none; filter:drop-shadow(0 4px 14px rgba(0,0,0,.35)); }
@@ -474,7 +474,9 @@ function feedHTML(){
       </header>
       <div class="media" id="media" style="aspect-ratio:${RATIOS[state.ratio].css}">
         <div class="track">${slides}</div>
-        ${multi ? `<div class="counter">1/${n}</div>: ''}
+        ${multi ? `<div class="counter">1/${n}</div>
+          <button class="arrow prev" data-act="prev" aria-label="Sebelumnya">${icon('left', 18, 2.4)}</button>
+          <button class="arrow next" data-act="next" aria-label="Berikutnya">${icon('right', 18, 2.4)}</button>` : ''}
         ${hasVideo ? `<button class="mute" data-act="mute" aria-label="Suara">${icon(state.muted ? 'mute' : 'vol', 16, 2)}</button>` : ''}
         <div class="burst">${icon('heart', 96, 0)}</div>
       </div>
