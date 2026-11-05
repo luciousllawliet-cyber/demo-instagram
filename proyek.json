@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "nama": "Apakah Semua Yahudi Zionis?",
+  "mode": "feed",
+  "ratio": "4:5",
+  "gridRatio": "3:4",
+  "dark": false,
+  "user": {
+    "username": "aaw_unpad",
+    "name": "al-Aqsa Awareness Week",
+    "verified": true,
+    "bio": "Penulis & desainer grafis\nKonten kreatif • Portofolio\n📍 Indonesia",
+    "followers": "1.248",
+    "following": "312"
+  },
+  "post": {
+    "caption": "Tulis caption postinganmu di sini. Hashtag dan @mention akan berwarna biru seperti di aplikasi.\n\n#desain #infografis #portofolio",
+    "location": "",
+    "audio": "Audio asli • username_kamu",
+    "likes": 1248,
+    "comments": 36,
+    "time": "2 jam yang lalu",
+    "stories": false
+  },
+  "media": [
+    {
+      "type": "image",
+      "file": "01.png"
+    },
+    {
+      "type": "image",
+      "file": "02.png"
+    },
+    {
+      "type": "image",
+      "file": "03.png"
+    },
+    {
+      "type": "image",
+      "file": "04.png"
+    },
+    {
+      "type": "image",
+      "file": "05.png"
+    },
+    {
+      "type": "image",
+      "file": "06.png"
+    },
+    {
+      "type": "image",
+      "file": "07.png"
+    }
+  ],
+  "ctx": [],
+  "avatar": null
+}
